@@ -1,0 +1,19 @@
+html, body {
+    margin-left: 125px;
+    margin-top: 50px;
+    padding: 0;
+    font-family: CourierPrimeRegular;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-family: BungeeHairlineRegular;
+    margin: 0;
+}
+
+img {
+    margin-right: 25px;
+}
