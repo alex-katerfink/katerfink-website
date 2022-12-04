@@ -1,5 +1,6 @@
 html, body {
-    margin-left: 125px;
+    margin-left: 75px;
+    margin-right: 75px;
     margin-top: 50px;
     padding: 0;
     font-family: CourierPrimeRegular;
@@ -12,14 +13,40 @@ header {
 h1 {
     font-family: BungeeHairlineRegular;
     margin: 0;
+    white-space: nowrap;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+h1:after {
+    content: '============';
+}
+
+article {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 250px;
 }
 
 img {
-    margin-right: 25px;
+    width: 200px;
+    height: 200px;
 }
 
 a {
     color: #6d6b6b;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+footer {
+    position: fixed; 
+    bottom: 10px; 
+    font-size: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,5 +57,63 @@ a {
   
     a {
       color: #bdbdbd;
+    }
+}
+
+@media (max-width: 1150px) {
+    html, body {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+}
+
+@media (max-width: 875px) {
+    h1:after {
+        content: '';
+    }
+
+    article {
+        grid-template-columns: 125px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    header {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: large;
+    }
+
+    h3 {
+        margin-top: 20px;
+    }
+
+    article {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: small;
     }
 }
