@@ -17,3 +17,18 @@ h1 {
 img {
     margin-right: 25px;
 }
+
+a {
+    color: #6d6b6b;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: white;
+      background: black;
+    }
+  
+    a {
+      color: #bdbdbd;
+    }
+}
