@@ -10,7 +10,7 @@ kater-fink-website ist die Kater-Fink Webapp
 
 ## Development
 
-- docker-compose up --build
+`docker-compose --project-name dev-katerfink up --build`
 
 ## Deploy
 
