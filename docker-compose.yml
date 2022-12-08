@@ -5,6 +5,6 @@ services:
         build: .
         restart: always
         volumes:
-            - ./html:/usr/share/nginx/html
+            - ./:/usr/share/nginx/html
         ports:
             - "80:80"
