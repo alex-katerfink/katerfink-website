@@ -10,7 +10,7 @@ Fonts Styles
     font-weight: 300;
     src:    local('BungeeHairline Regular'),
             local('BungeeHairline-Regular'),
-            url('/fonts/BungeeHairline-Regular.ttf') format('truetype');
+            url('fonts/BungeeHairline-Regular.ttf') format('truetype');
 }
 @font-face { 
     font-family: CourierPrimeRegular;
@@ -19,5 +19,5 @@ Fonts Styles
     font-weight: 300;
     src:    local('CourierPrime Regular'),
             local('CourierPrime-Regular'),
-            url('/fonts/CourierPrime-Regular.ttf') format('truetype');
+            url('fonts/CourierPrime-Regular.ttf') format('truetype');
 }
